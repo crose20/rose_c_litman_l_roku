@@ -1,0 +1,30 @@
+{
+  "name": "baile_joanna_doria_fernando_av_app",
+  "version": "1.0.0",
+  "description": "Roku Flashback app",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobaile/Baile_J_Doria_F_AV_App.git"
+  },
+  "keywords": [
+    "fanshawe",
+    "student",
+    "app",
+    "video"
+  ],
+  "author": "Fernando D'Oria and Joanna Baile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jobaile/Baile_J_Doria_F_AV_App/issues"
+  },
+  "homepage": "https://github.com/jobaile/Baile_J_Doria_F_AV_App#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  }
+}

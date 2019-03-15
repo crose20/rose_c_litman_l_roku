@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roku Flashback</title>
+
+    <!-- Foundation CSS-->
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/main.css"> <!--EDITABLE CSS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  </head>
+<body>
+
+<body>
+  <main id="app">
+    <section>
+        <div v-if="authenticated" class="nav_bar_cont">
+            <div class="nav_bar_links">
+              <ul class="menu">
+                <li class="menu-text">EDGE</li>
+                <li class="menu-item"><a href="#">Menu</a></li>
+                <li class="menu-item"><a href="#">Settings</a></li>
+                <li v-on:click="logout()" class="menu-item"><a href="#">Log Out</a></li>
+              </ul>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <router-view @authenticated="setAuthenticated" @setsubuser="setCurrentUser"/>
+    </div>
+  </main>
+
+  <script src="js/js.js"></script>
+
+  <!--Foundation JS FILE-->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script> 
+  <!--JS FILE YOU CAN EDIT-->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

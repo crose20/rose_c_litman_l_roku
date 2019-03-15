@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/master.css" />
+    <script src="js/app.js"></script>
+</head>
+<body>
+    
+
+    <section class="wrapper">
+        <header class="section header">
+        
+        <div class="header__text">
+            <h1>Roku Flashback</h1>
+            <p>Sign in or create a new account.</p>
+        </div>
+        </header>
+
+        <!-- Sign Up -->
+        <section class="section sign-up">
+            <form action="">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="confirm" placeholder="Confirm Password">
+            <button>Create Account</button>
+            <p class="opposite-btn2">Already have an account?</p>
+            </form>
+        </section>
+
+        <!-- Sign In -->
+        <div class="section sign-in">
+            <form action="">
+            <input v-model="input.username" name="username" type="text" placeholder="username">
+
+            <input v-model="input.password" type="password" placeholder="password">
+            <button v-on:click.prevent="login()" type="submit" >Sign In</button>
+            <p class="opposite-btn1">Don't have an account?</p>
+            </form>
+        </div>
+
+    </section>
+    
+  <script src="js/js.js"></script>
+
+</body>
+</html>
